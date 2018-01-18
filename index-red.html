@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Transavia | Stories</title>
+</head>
+
+<body>
+
+
+    <div class="flight-dropdown-menu" id="flight-dropdown">
+        <div class="dropdown-info">
+            <div>
+                <h2>Vlucht 4jk59</h2>
+                <h3>Amsterdam Schiphol > Antalya Turkije</h3>
+                <p>Boarding: 24-04-17 15:50</p>
+                <p>Vluchttijd: 4 uur</p>
+            </div>
+            <div>
+
+                <img id="bel" src="./img/bel-icoon.svg" alt="Icoon van een bel"><br />
+                <label for="boarding-alarm">Geef mij een melding als ik kan boarden.</label>
+                <input type="checkbox" id="boarding-alarm">
+
+            </div>
+        </div>
+        <div id="timer">
+            <img src="./img/vliegtuig-icoon.svg" alt="">
+            <div>
+                <span class="hours"></span>
+            </div>
+            <div>
+                <span class="minutes"></span>
+            </div>
+            <div>
+                <span class="seconds"></span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="add-favorites" id="add-favorites">
+        <img src="./img/favorites-icon.svg" alt="">
+        <p>Verhaal toegevoegd aan <a href="./favorites.html">favorietenlijst.</a></p>
+        <img id="like-cross" src="./img/cross-icon.svg" alt="">
+    </div>
+
+
+    <header class="main-header">
+        <nav>
+            <div><a href="index.html">
+            <img src="./img/huisje-icon.svg" alt="">
+            </a></div>
+            <div>
+                <img src="./img/transavia-logo.png" alt=""></div>
+            <div>
+                <a href="favorites.html">
+               <img src="./img/favorites-icon.svg" alt=""><p>Favorietenlijst(2)</p>
+               </a>
+                <a href="login.html">
+                <img src="./img/contact-icon.svg" alt=""><p>Inloggen</p>
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+
+        <section class="hero-main">
+
+
+            <div class="container">
+                <img class="transavia-round-logo" src="./img/transavia-logo-rond.svg" alt="">
+                <h1>Verder lezen?</h1>
+                <div class="section-continue">
+
+
+
+                    <article id="continue-2">
+                        <div>
+                            <ul>
+                                <li>
+                                    <h4>7 Kinderboek</h4>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="./img/heart-icon.svg" alt="">
+                                        <small>137</small>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><small>Duur: Lang verhaal</small></li>
+                                <li><small>Genre: Humor</small></li>
+                            </ul>
+                            <p>Dit is een stuk tekst over het zombie verhaal van de 99 verhalen die op deze website komen te staan</p>
+                            <a class="blue-button" href="../stories/kinderboek.html">Verder lezen</a>
+                            <button id="likebutton" class="pink-button"><img src="./img/heart-icon-wit.svg" alt=""></button>
+                        </div>
+                        <div class="progression-indicator">
+                            <div class="progression"></div>
+                        </div>
+                    </article>
+
+
+                </div>
+            </div>
+
+            <div class="spacer-v">
+
+            </div>
+
+
+        </section>
+
+        <section>
+
+
+            <div class="container">
+
+                <div class="filter">
+                    <div>
+                        <form action="index.html">
+                            <fieldset>
+                                <input id="direct-search" type="text">
+                                <button class="pink-button" type="submit">Zoeken</button>
+                                <ul id="search-dropdown">
+                                    <li><strong>Aut</strong>o</li>
+                                    <li><strong>Aut</strong>isme</li>
+                                    <li><strong>Aut</strong>omatisch</li>
+
+                                </ul>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div>
+                        <form action="index.html">
+                            <fieldset>
+                                <div>
+                                    <div class="dropdown">
+                                        <img src="./img/filter-icon.svg" alt="">
+                                        <label for="clickbutton">Filter</label>
+                                        <input class="maincheck" type="checkbox" id="clickbutton">
+                                        <ul class="items">
+                                            <li> <label for="">Genre</label></li>
+                                            <li> <input type="checkbox" id="clickbutton">Maan</li>
+                                            <li> <input type="checkbox" id="clickbutton">Roos</li>
+                                            <li> <input type="checkbox" id="clickbutton">Vis</li>
+                                            <li> <input type="checkbox" id="clickbutton">Konijn</li>
+                                            <li> <input type="checkbox" id="clickbutton">Kip</li>
+                                            <li> <label for="">Duur</label></li>
+                                            <li>
+                                                <input type="radio" id="long" name="duration">Lang verhaal</li>
+                                            <li>
+                                                <input type="radio" id="short" name="duration">Kort verhaal</li>
+
+                                        </ul>
+                                    </div>
+                                    <img src="./img/sort-icon.svg" alt="">
+                                    <label for="Sorteren">Sorteren</label>
+                                    <select id="sorteren" type="select">
+                                <option value="">A t/m Z</option>
+                                <option value="">Z t/m A</option>
+                                <option value="">Meest geliked</option>
+                                <option value="">Minst geliked</option>
+                                </select>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+                <div class="section-search">
+
+                    <article>
+                        <header>
+                            <img src="./img/kinderboek.jpg" alt="">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <h4>7 Kinderboek</h4>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./img/heart-icon.svg" alt="">
+                                            <small>95</small>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li><small>Duur: Lang verhaal</small></li>
+                                    <li><small>Genre: Kind</small></li>
+                                </ul>
+                                <p>Dit is een stuk tekst over het zombie verhaal van de 99 verhalen die op deze website komen te staan</p>
+                            </div>
+                        </header>
+                        <footer>
+                            <a class="blue-button" href="./stories/kinderboek.html">Verhaal Lezen</a>
+                            <button id="likebutton" class="pink-button"><img id="heart" src="./img/heart-icon-wit.svg" alt=""></button>
+                        </footer>
+
+                    </article>
+
+
+                    <article>
+                        <header>
+                            <img src="./img/poep.jpg" alt="">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <h4>39 Poepen</h4>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./img/heart-icon.svg" alt="">
+                                            <small>76</small>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li><small>Duur: Lang verhaal</small></li>
+                                    <li><small>Genre: Triest</small></li>
+                                </ul>
+                                <p>Dit is een stuk tekst over het zombie verhaal van de 99 verhalen die op deze website komen te staan</p>
+                            </div>
+                        </header>
+                        <footer>
+                            <a class="blue-button" href="">Verhaal Lezen</a>
+                            <button id="likebutton" class="pink-button"><img id="heart" src="./img/heart-icon-wit.svg" alt=""></button>
+                        </footer>
+
+                    </article>
+
+
+                    <article>
+                        <header>
+                            <img src="./img/alzheimer.jpg" alt="">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <h4>28 Alzheimer</h4>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./img/heart-icon.svg" alt="">
+                                            <small>137</small>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li><small>Duur: Lang verhaal</small></li>
+                                    <li><small>Genre: Triest</small></li>
+                                </ul>
+                                <p>Dit is een stuk tekst over het zombie verhaal van de 99 verhalen die op deze website komen te staan</p>
+                            </div>
+                        </header>
+                        <footer>
+                            <a class="blue-button" href="./stories/alzheimer.html">Verhaal Lezen</a>
+                            <button id="likebutton" class="pink-button likebuttons"><img id="heart" src="./img/heart-icon-wit.svg" alt=""></button>
+                        </footer>
+
+                    </article>
+
+                    <article>
+                        <header>
+                            <img src="./img/zombie.jpg" alt="">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <h4>89 Zombie</h4>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./img/heart-icon.svg" alt="">
+                                            <small>110</small>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li><small>Duur: Lang verhaal</small></li>
+                                    <li><small>Genre: Horror</small></li>
+                                </ul>
+                                <p>Dit is een stuk tekst over het zombie verhaal van de 99 verhalen die op deze website komen te staan</p>
+                            </div>
+                        </header>
+                        <footer>
+                            <a class="blue-button" href="./stories/zombie.html">Verhaal Lezen</a>
+                            <button id="likebutton" class="pink-button likebuttons"><img id="heart" src="./img/heart-icon-wit.svg" alt=""></button>
+                        </footer>
+
+                    </article>
+
+                    <article>
+                        <header>
+                            <img src="./img/kinderboek.jpg" alt="">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <h4>7 Kinderboek</h4>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./img/heart-icon.svg" alt="">
+                                            <small>95</small>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li><small>Duur: Lang verhaal</small></li>
+                                    <li><small>Genre: Kind</small></li>
+                                </ul>
+                                <p>Dit is een stuk tekst over het zombie verhaal van de 99 verhalen die op deze website komen te staan</p>
+                            </div>
+                        </header>
+                        <footer>
+                            <a class="blue-button" href="./stories/kinderboek.html">Verhaal Lezen</a>
+                            <button id="likebutton" class="pink-button"><img id="heart" src="./img/heart-icon-wit.svg" alt=""></button>
+                        </footer>
+
+                    </article>
+
+
+                    <article>
+                        <header>
+                            <img src="./img/poep.jpg" alt="">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <h4>39 Poepen</h4>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./img/heart-icon.svg" alt="">
+                                            <small>76</small>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li><small>Duur: Lang verhaal</small></li>
+                                    <li><small>Genre: Triest</small></li>
+                                </ul>
+                                <p>Dit is een stuk tekst over het zombie verhaal van de 99 verhalen die op deze website komen te staan</p>
+                            </div>
+                        </header>
+                        <footer>
+                            <a class="blue-button" href="">Verhaal Lezen</a>
+                            <button id="likebutton" class="pink-button"><img id="heart" src="./img/heart-icon-wit.svg" alt=""></button>
+                        </footer>
+
+                    </article>
+
+
+                    <article>
+                        <header>
+                            <img src="./img/alzheimer.jpg" alt="">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <h4>28 Alzheimer</h4>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./img/heart-icon.svg" alt="">
+                                            <small>137</small>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li><small>Duur: Lang verhaal</small></li>
+                                    <li><small>Genre: Triest</small></li>
+                                </ul>
+                                <p>Dit is een stuk tekst over het zombie verhaal van de 99 verhalen die op deze website komen te staan</p>
+                            </div>
+                        </header>
+                        <footer>
+                            <a class="blue-button" href="./stories/alzheimer.html">Verhaal Lezen</a>
+                            <button id="likebutton" class="pink-button likebuttons"><img id="heart" src="./img/heart-icon-wit.svg" alt=""></button>
+                        </footer>
+
+                    </article>
+
+                    <article>
+                        <header>
+                            <img src="./img/zombie.jpg" alt="">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <h4>89 Zombie</h4>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <img src="./img/heart-icon.svg" alt="">
+                                            <small>110</small>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li><small>Duur: Lang verhaal</small></li>
+                                    <li><small>Genre: Horror</small></li>
+                                </ul>
+                                <p>Dit is een stuk tekst over het zombie verhaal van de 99 verhalen die op deze website komen te staan</p>
+                            </div>
+                        </header>
+                        <footer>
+                            <a class="blue-button" href="./stories/zombie.html">Verhaal Lezen</a>
+                            <button id="likebutton" class="pink-button likebuttons"><img id="heart" src="./img/heart-icon-wit.svg" alt=""></button>
+                        </footer>
+
+                    </article>
+
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+    <footer>
+        <ul>
+            <li><a href="https://www.transavia.com/nl-NL/home/" target="_blank">Transavia-official</a></li>
+            <li><a href="">Favorieten</a></li>
+        </ul>
+        <img src="./img/transavia-logo.png" alt="">
+    </footer>
+    <script type="text/javascript" src="/js/script.js"></script>
+</body>
+
+</html>
